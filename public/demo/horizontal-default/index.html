@@ -1,0 +1,924 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Fily Premium Bootstrap Admin Dashboard Template</title>
+  <!-- plugins:css -->
+  <link rel="stylesheet" href="../../vendors/iconfonts/mdi/font/css/materialdesignicons.min.css">
+  <link rel="stylesheet" href="../../vendors/css/vendor.bundle.base.css">
+  <link rel="stylesheet" href="../../vendors/css/vendor.bundle.addons.css">
+  <!-- endinject -->
+  <!-- plugin css for this page -->
+  <!-- End plugin css for this page -->
+  <!-- inject:css -->
+  <link rel="stylesheet" href="../../css/horizontal-layout/style.css">
+  <!-- endinject -->
+  <link rel="shortcut icon" href="../../images/favicon.png" />
+</head>
+
+<body>
+  <div class="container-scroller">
+    <!-- partial:partials/_horizontal-navbar.html -->
+    <div class="horizontal-menu">
+      <nav class="navbar top-navbar col-lg-12 col-12 p-0">
+        <div class="container">
+          <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
+            <a class="navbar-brand brand-logo" href="index.html"><img src="../../images/logo.svg" alt="logo"/></a>
+            <a class="navbar-brand brand-logo-mini" href="index.html"><img src="../../images/logo-mini.svg" alt="logo"/></a>
+          </div>
+          <div class="navbar-menu-wrapper d-flex align-items-center justify-content-end">
+            <ul class="navbar-nav mr-lg-2">
+              <li class="nav-item nav-search d-none d-lg-block">
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" id="search">
+                      <i class="mdi mdi-magnify"></i>
+                    </span>
+                  </div>
+                  <input type="text" class="form-control" placeholder="Search..." aria-label="search" aria-describedby="search">
+                </div>
+              </li>
+            </ul>
+            <ul class="navbar-nav navbar-nav-right">
+              <li class="nav-item dropdown mr-1">
+                <a class="nav-link count-indicator dropdown-toggle d-flex justify-content-center align-items-center" id="messageDropdown" href="#" data-toggle="dropdown">
+                  <i class="mdi mdi-email mx-0"></i>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="messageDropdown">
+                  <p class="mb-0 font-weight-normal float-left dropdown-header">Messages</p>
+                  <a class="dropdown-item preview-item">
+                    <div class="preview-thumbnail">
+                        <img src="https://via.placeholder.com/36x36" alt="image" class="profile-pic">
+                    </div>
+                    <div class="preview-item-content flex-grow">
+                      <h6 class="preview-subject ellipsis font-weight-normal">David Grey
+                      </h6>
+                      <p class="font-weight-light small-text text-muted mb-0">
+                        The meeting is cancelled
+                      </p>
+                    </div>
+                  </a>
+                  <a class="dropdown-item preview-item">
+                    <div class="preview-thumbnail">
+                        <img src="https://via.placeholder.com/36x36" alt="image" class="profile-pic">
+                    </div>
+                    <div class="preview-item-content flex-grow">
+                      <h6 class="preview-subject ellipsis font-weight-normal">Tim Cook
+                      </h6>
+                      <p class="font-weight-light small-text text-muted mb-0">
+                        New product launch
+                      </p>
+                    </div>
+                  </a>
+                  <a class="dropdown-item preview-item">
+                    <div class="preview-thumbnail">
+                        <img src="https://via.placeholder.com/36x36" alt="image" class="profile-pic">
+                    </div>
+                    <div class="preview-item-content flex-grow">
+                      <h6 class="preview-subject ellipsis font-weight-normal"> Johnson
+                      </h6>
+                      <p class="font-weight-light small-text text-muted mb-0">
+                        Upcoming board meeting
+                      </p>
+                    </div>
+                  </a>
+                </div>
+              </li>
+              <li class="nav-item dropdown mr-4">
+                <a class="nav-link count-indicator dropdown-toggle d-flex align-items-center justify-content-center" id="notificationDropdown" href="#" data-toggle="dropdown">
+                  <i class="mdi mdi-bell mx-0"></i>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="notificationDropdown">
+                  <p class="mb-0 font-weight-normal float-left dropdown-header">Notifications</p>
+                  <a class="dropdown-item preview-item">
+                    <div class="preview-thumbnail">
+                      <div class="preview-icon bg-success">
+                        <i class="mdi mdi-information mx-0"></i>
+                      </div>
+                    </div>
+                    <div class="preview-item-content">
+                      <h6 class="preview-subject font-weight-normal">Application Error</h6>
+                      <p class="font-weight-light small-text mb-0 text-muted">
+                        Just now
+                      </p>
+                    </div>
+                  </a>
+                  <a class="dropdown-item preview-item">
+                    <div class="preview-thumbnail">
+                      <div class="preview-icon bg-warning">
+                        <i class="mdi mdi-settings mx-0"></i>
+                      </div>
+                    </div>
+                    <div class="preview-item-content">
+                      <h6 class="preview-subject font-weight-normal">Settings</h6>
+                      <p class="font-weight-light small-text mb-0 text-muted">
+                        Private message
+                      </p>
+                    </div>
+                  </a>
+                  <a class="dropdown-item preview-item">
+                    <div class="preview-thumbnail">
+                      <div class="preview-icon bg-info">
+                        <i class="mdi mdi-account-box mx-0"></i>
+                      </div>
+                    </div>
+                    <div class="preview-item-content">
+                      <h6 class="preview-subject font-weight-normal">New user registration</h6>
+                      <p class="font-weight-light small-text mb-0 text-muted">
+                        2 days ago
+                      </p>
+                    </div>
+                  </a>
+                </div>
+              </li>
+              <li class="nav-item nav-profile dropdown mr-0 mr-sm-2">
+                <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="profileDropdown">
+                  <img src="https://via.placeholder.com/40x40" alt="profile"/>
+                  <span class="nav-profile-name">Don Richards</span>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="profileDropdown">
+                  <a class="dropdown-item">
+                    <i class="mdi mdi-settings text-primary"></i>
+                    Settings
+                  </a>
+                  <a class="dropdown-item">
+                    <i class="mdi mdi-logout text-primary"></i>
+                    Logout
+                  </a>
+                </div>
+              </li>
+            </ul>
+            <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="horizontal-menu-toggle">
+              <span class="mdi mdi-menu"></span>
+            </button>
+          </div>
+        </div>
+      </nav>
+      <nav class="bottom-navbar">
+        <div class="container">
+          <ul class="nav page-navigation">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">
+                <i class="mdi mdi-home-outline menu-icon"></i>
+                <span class="menu-title">Dashboard</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pages/widgets/widgets.html">
+                <i class="mdi mdi-airplay menu-icon"></i>
+                <span class="menu-title">Widgets</span>
+              </a>
+            </li>
+            <li class="nav-item mega-menu">
+              <a href="#" class="nav-link">
+                <i class="mdi mdi-puzzle-outline menu-icon"></i>
+                <span class="menu-title">UI Elements</span>
+                <i class="menu-arrow"></i>
+              </a>
+              <div class="submenu">
+                <div class="col-group-wrapper row">
+                  <div class="col-group col-md-4">
+                    <div class="row">
+                      <div class="col-12">
+                        <p class="category-heading">Basic Elements</p>
+                        <div class="submenu-item">
+                          <div class="row">
+                            <div class="col-md-6">
+                              <ul>
+                                <li class="nav-item"><a class="nav-link" href="pages/ui-features/accordions.html">Accordion</a></li>
+                                <li class="nav-item"><a class="nav-link" href="pages/ui-features/buttons.html">Buttons</a></li>
+                                <li class="nav-item"><a class="nav-link" href="pages/ui-features/badges.html">Badges</a></li>
+                                <li class="nav-item"><a class="nav-link" href="pages/ui-features/breadcrumbs.html">Breadcrumbs</a></li>
+                                <li class="nav-item"><a class="nav-link" href="pages/ui-features/dropdowns.html">Dropdown</a></li>
+                                <li class="nav-item"><a class="nav-link" href="pages/ui-features/modals.html">Modals</a></li>
+                              </ul>
+                            </div>
+                            <div class="col-md-6">
+                              <ul>
+                                <li class="nav-item"><a class="nav-link" href="pages/ui-features/progress.html">Progress bar</a></li>
+                                <li class="nav-item"><a class="nav-link" href="pages/ui-features/pagination.html">Pagination</a></li>
+                                <li class="nav-item"><a class="nav-link" href="pages/ui-features/tabs.html">Tabs</a></li>
+                                <li class="nav-item"><a class="nav-link" href="pages/ui-features/typography.html">Typography</a></li>
+                                <li class="nav-item"><a class="nav-link" href="pages/ui-features/tooltips.html">Tooltip</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-group col-md-4">
+                    <div class="row">
+                      <div class="col-12">
+                        <p class="category-heading">Advanced Elements</p>
+                        <div class="submenu-item">
+                          <div class="row">
+                            <div class="col-md-6">
+                              <ul>
+                                <li class="nav-item"><a class="nav-link" href="pages/ui-features/dragula.html">Dragula</a></li>
+                                <li class="nav-item"><a class="nav-link" href="pages/ui-features/carousel.html">Carousel</a></li>
+                                <li class="nav-item"><a class="nav-link" href="pages/ui-features/clipboard.html">Clipboard</a></li>
+                                <li class="nav-item"><a class="nav-link" href="pages/ui-features/context-menu.html">Context Menu</a></li>
+                                <li class="nav-item"><a class="nav-link" href="pages/ui-features/loaders.html">Loader</a></li>
+                                <li class="nav-item"><a class="nav-link" href="pages/ui-features/slider.html">Slider</a></li>
+                              </ul>
+                            </div>
+                            <div class="col-md-6">
+                              <ul>
+                                <li class="nav-item"><a class="nav-link" href="pages/ui-features/popups.html">Popup</a></li>
+                                <li class="nav-item"><a class="nav-link" href="pages/ui-features/notifications.html">Notification</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-group col-md-4">
+                    <p class="category-heading">Icons</p>
+                    <ul class="submenu-item">
+                      <li class="nav-item"><a class="nav-link" href="pages/icons/flag-icons.html">Flag Icons</a></li>
+                      <li class="nav-item"> <a class="nav-link" href="pages/icons/mdi.html">Mdi icons</a></li>
+                      <li class="nav-item"><a class="nav-link" href="pages/icons/font-awesome.html">Font Awesome</a></li>
+                      <li class="nav-item"><a class="nav-link" href="pages/icons/simple-line-icon.html">Simple Line Icons</a></li>
+                      <li class="nav-item"><a class="nav-link" href="pages/icons/themify.html">Themify Icons</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="mdi mdi-file-document-box-outline menu-icon"></i>
+                <span class="menu-title">Forms</span>
+                <i class="menu-arrow"></i></a>
+              <div class="submenu">
+                <ul class="submenu-item">
+                  <li class="nav-item"><a class="nav-link" href="pages/forms/basic_elements.html">Basic Elements</a></li>
+                  <li class="nav-item"><a class="nav-link" href="pages/forms/advanced_elements.html">Advanced Elements</a></li>
+                  <li class="nav-item"><a class="nav-link" href="pages/forms/validation.html">Validation</a></li>
+                  <li class="nav-item"><a class="nav-link" href="pages/forms/wizard.html">Wizard</a></li>
+                  <li class="nav-item"><a class="nav-link" href="pages/forms/text_editor.html">Text Editor</a></li>
+                  <li class="nav-item"><a class="nav-link" href="pages/forms/code_editor.html">Code Editor</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item mega-menu">
+              <a href="#" class="nav-link">
+                <i class="mdi mdi-finance menu-icon"></i>
+                <span class="menu-title">Data</span>
+                <i class="menu-arrow"></i></a>
+              <div class="submenu">
+                <div class="col-group-wrapper row">
+                  <div class="col-group col-md-6">
+                    <p class="category-heading">Charts</p>
+                    <div class="submenu-item">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <ul>
+                            <li class="nav-item"><a class="nav-link" href="pages/charts/chartjs.html">Chart Js</a></li>
+                            <li class="nav-item"><a class="nav-link" href="pages/charts/morris.html">Morris</a></li>
+                            <li class="nav-item"><a class="nav-link" href="pages/charts/flot-chart.html">Flot</a></li>
+                            <li class="nav-item"><a class="nav-link" href="pages/charts/google-charts.html">Google Chart</a></li>
+                          </ul>
+                        </div>
+                        <div class="col-md-6">
+                          <ul>
+                            <li class="nav-item"><a class="nav-link" href="pages/charts/sparkline.html">Sparkline</a></li>
+                            <li class="nav-item"><a class="nav-link" href="pages/charts/c3.html">C3 Chart</a></li>
+                            <li class="nav-item"><a class="nav-link" href="pages/charts/chartist.html">Chartist</a></li>
+                            <li class="nav-item"><a class="nav-link" href="pages/charts/justGage.html">JustGage</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-group col-md-3">
+                    <p class="category-heading">Table</p>
+                    <ul class="submenu-item">
+                      <li class="nav-item"><a class="nav-link" href="pages/tables/basic-table.html">Basic Table</a></li>
+                      <li class="nav-item"><a class="nav-link" href="pages/tables/data-table.html">Data Table</a></li>
+                      <li class="nav-item"><a class="nav-link" href="pages/tables/js-grid.html">Js-grid</a></li>
+                      <li class="nav-item"><a class="nav-link" href="pages/tables/sortable-table.html">Sortable Table</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-group col-md-3">
+                    <p class="category-heading">Maps</p>
+                    <ul class="submenu-item">
+                      <li class="nav-item"><a class="nav-link" href="pages/maps/mapael.html">Mapael</a></li>
+                      <li class="nav-item"><a class="nav-link" href="pages/maps/vector-map.html">Vector Map</a></li>
+                      <li class="nav-item"><a class="nav-link" href="pages/maps/google-maps.html">Google Map</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item mega-menu">
+              <a href="#" class="nav-link">
+                <i class="mdi mdi-codepen menu-icon"></i>
+                <span class="menu-title">Sample Pages</span>
+                <i class="menu-arrow"></i></a>
+              <div class="submenu">
+                <div class="col-group-wrapper row">
+                  <div class="col-group col-md-3">
+                    <p class="category-heading">User Pages</p>
+                    <ul class="submenu-item">
+                      <li class="nav-item"><a class="nav-link" href="pages/samples/login.html">Login</a></li>
+                      <li class="nav-item"><a class="nav-link" href="pages/samples/login-2.html">Login 2</a></li>
+                      <li class="nav-item"><a class="nav-link" href="pages/samples/register.html">Register</a></li>
+                      <li class="nav-item"><a class="nav-link" href="pages/samples/register-2.html">Register 2</a></li>
+                      <li class="nav-item"><a class="nav-link" href="pages/samples/lock-screen.html">Lockscreen</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-group col-md-3">
+                    <p class="category-heading">Error Pages</p>
+                    <ul class="submenu-item">
+                      <li class="nav-item"><a class="nav-link" href="pages/samples/error-400.html">400</a></li>
+                      <li class="nav-item"><a class="nav-link" href="pages/samples/error-404.html">404</a></li>
+                      <li class="nav-item"><a class="nav-link" href="pages/samples/error-500.html">500</a></li>
+                      <li class="nav-item"><a class="nav-link" href="pages/samples/error-505.html">505</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-group col-md-3">
+                    <p class="category-heading">E-commerce</p>
+                    <ul class="submenu-item">
+                      <li class="nav-item"><a class="nav-link" href="pages/samples/invoice.html">Invoice</a></li>
+                      <li class="nav-item"><a class="nav-link" href="pages/samples/pricing-table.html">Pricing Table</a></li>
+                      <li class="nav-item"><a class="nav-link" href="pages/samples/orders.html">Orders</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-group col-md-3">
+                    <p class="category-heading">General</p>
+                    <ul class="submenu-item">
+                      <li class="nav-item"><a class="nav-link" href="pages/samples/search-results.html">Search Results</a></li>
+                      <li class="nav-item"><a class="nav-link" href="pages/samples/profile.html">Profile</a></li>
+                      <li class="nav-item"><a class="nav-link" href="pages/samples/timeline.html">Timeline</a></li>
+                      <li class="nav-item"><a class="nav-link" href="pages/samples/news-grid.html">News grid</a></li>
+                      <li class="nav-item"><a class="nav-link" href="pages/samples/portfolio.html">Portfolio</a></li>
+                      <li class="nav-item"><a class="nav-link" href="pages/samples/faq.html">FAQ</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="mdi mdi-image-filter menu-icon"></i>
+                <span class="menu-title">Apps</span>
+                <i class="menu-arrow"></i></a>
+              <div class="submenu">
+                <ul class="submenu-item">
+                  <li class="nav-item"><a class="nav-link" href="pages/apps/email.html">Email</a></li>
+                  <li class="nav-item"><a class="nav-link" href="pages/apps/calendar.html">Calendar</a></li>
+                  <li class="nav-item"><a class="nav-link" href="pages/apps/todo.html">Todo List</a></li>
+                  <li class="nav-item"><a class="nav-link" href="pages/apps/gallery.html">Gallery</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a href="pages/documentation/documentation.html" class="nav-link">
+                <i class="mdi mdi-file-document-box-outline menu-icon"></i>
+                <span class="menu-title">Documentation</span></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <!-- partial -->
+    <div class="container-fluid page-body-wrapper">
+      <div class="main-panel">
+        <div class="content-wrapper">
+          <div class="row">
+            <div class="col-md-12 grid-margin">
+                <div class="card bg-white">
+                  <div class="card-body d-flex align-items-center justify-content-between">
+                    <h4 class="mt-1 mb-1">Hi, Welcomeback!</h4>
+                    <button class="btn btn-info d-none d-md-block">Import</button>
+                  </div>
+                </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xl-6 grid-margin">
+              <div class="row">
+                <div class="col-md-6 grid-margin stretch-card">
+                  <div class="card">
+                    <div class="card-body">
+                      <p class="card-title">Users</p>
+                      <div class="d-flex flex-wrap align-items-baseline">
+                          <h2 class="mr-3">33,956</h2>
+                          <i class="mdi mdi-arrow-up mr-1 text-danger"></i><span><p class="mb-0 text-danger font-weight-medium">+2.12%</p></span>
+                      </div>
+                      <p class="mb-0 text-muted">Total users world wide</p>
+                    </div>
+                    <canvas id="users-chart"></canvas>
+                  </div>
+                </div>
+                <div class="col-md-6 grid-margin stretch-card">
+                  <div class="card">
+                    <div class="card-body">
+                      <p class="card-title">Projects</p>
+                      <div class="d-flex flex-wrap align-items-baseline">
+                        <h2 class="mr-3">50.36%</h2>
+                        <i class="mdi mdi-arrow-up mr-1 text-success"></i><span><p class="mb-0 text-success font-weight-medium">+9.12%</p></span>                          
+                      </div>
+                      <p class="mb-0 text-muted">Total users world wide</p>
+                    </div>
+                    <canvas id="projects-chart"></canvas>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12 stretch-card">
+                  <div class="card">
+                    <div class="card-body">
+                      <p class="card-title">Downloads</p>
+                      <p class="text-muted mb-2">Watching ice melt. This is fun. Only you could make those words cute.</p>
+                      <div class="row mt-4">
+                        <div class="col-md-6 stretch-card">
+                          <div class="row d-flex align-items-center">
+                            <div class="col-6">
+                              <div id="offlineProgress"></div>                              
+                            </div>
+                            <div class="col-6 pl-0">
+                              <p class="mb-0">Offline</p>
+                              <h2>45,324</h2>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-6 stretch-card mt-4 mt-md-0">
+                          <div class="row d-flex align-items-center">
+                            <div class="col-6">
+                              <div id="onlineProgress"></div>                              
+                            </div>
+                            <div class="col-6 pl-0">
+                              <p class="mb-0">Online</p>
+                              <h2>12,236</h2>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-6 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  <p class="card-title">Total Sales</p>
+                  <p class="text-muted">Audience to which the users belonged while on the current date Audience to which the users belonged while on the current date Audience to which the users belonged while on the current date </p>
+                  <div class="d-flex flex-wrap mb-4 mt-4 pb-4">
+                    <div class="mr-4 mr-md-5">
+                      <p class="mb-0">Revenue</p>
+                      <h4>13,956</h4>
+                    </div>
+                    <div class="mr-4 mr-md-5">
+                      <p class="mb-0">Returns</p>
+                      <h4>27,219</h4>
+                    </div>
+                    <div class="mr-4 mr-md-5">
+                      <p class="mb-0">Queries</p>
+                      <h4>03,386</h4>
+                    </div>
+                    <div class="mr-4 mr-md-5">
+                      <p class="mb-0">Invoices</p>
+                      <h4>04,739</h4>
+                    </div>
+                  </div>
+                  <canvas id="total-sales-chart"></canvas>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-3 grid-margin stretch-card">
+              <div class="card border-0 border-radius-2 bg-success">
+                <div class="card-body">
+                  <div class="d-flex flex-md-column flex-xl-row flex-wrap  align-items-center justify-content-between">
+                    <div class="icon-rounded-inverse-success icon-rounded-lg">
+                      <i class="mdi mdi-arrow-top-right"></i>
+                    </div>
+                    <div class="text-white">
+                      <p class="font-weight-medium mt-md-2 mt-xl-0 text-md-center text-xl-left">Total Sales</p>
+                      <div class="d-flex flex-md-column flex-xl-row flex-wrap align-items-baseline align-items-md-center align-items-xl-baseline">
+                        <h3 class="mb-0 mb-md-1 mb-lg-0 mr-1">$508</h3>
+                        <small class="mb-0">This month</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 grid-margin stretch-card">
+              <div class="card border-0 border-radius-2 bg-info">
+                <div class="card-body">
+                  <div class="d-flex flex-md-column flex-xl-row flex-wrap  align-items-center justify-content-between">
+                    <div class="icon-rounded-inverse-info icon-rounded-lg">
+                      <i class="mdi mdi-basket"></i>
+                    </div>
+                    <div class="text-white">
+                      <p class="font-weight-medium mt-md-2 mt-xl-0 text-md-center text-xl-left">Total Purchases</p>
+                      <div class="d-flex flex-md-column flex-xl-row flex-wrap align-items-baseline align-items-md-center align-items-xl-baseline">
+                        <h3 class="mb-0 mb-md-1 mb-lg-0 mr-1">$387</h3>
+                        <small class="mb-0">This month</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 grid-margin stretch-card">
+              <div class="card border-0 border-radius-2 bg-danger">
+                <div class="card-body">
+                  <div class="d-flex flex-md-column flex-xl-row flex-wrap  align-items-center justify-content-between">
+                    <div class="icon-rounded-inverse-danger icon-rounded-lg">
+                      <i class="mdi mdi-chart-donut-variant"></i>
+                    </div>
+                    <div class="text-white">
+                      <p class="font-weight-medium mt-md-2 mt-xl-0 text-md-center text-xl-left">Total Orders</p>
+                      <div class="d-flex flex-md-column flex-xl-row flex-wrap align-items-baseline align-items-md-center align-items-xl-baseline">
+                        <h3 class="mb-0 mb-md-1 mb-lg-0 mr-1">$161</h3>
+                        <small class="mb-0">This month</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 grid-margin stretch-card">
+              <div class="card border-0 border-radius-2 bg-warning">
+                <div class="card-body">
+                  <div class="d-flex flex-md-column flex-xl-row flex-wrap  align-items-center justify-content-between">
+                    <div class="icon-rounded-inverse-warning icon-rounded-lg">
+                      <i class="mdi mdi-chart-multiline"></i>
+                    </div>
+                    <div class="text-white">
+                      <p class="font-weight-medium mt-md-2 mt-xl-0 text-md-center text-xl-left">Total Growth</p>
+                      <div class="d-flex flex-md-column flex-xl-row flex-wrap align-items-baseline align-items-md-center align-items-xl-baseline">
+                        <h3 class="mb-0 mb-md-1 mb-lg-0 mr-1">$231</h3>
+                        <small class="mb-0">This month</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xl-8 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between align-items-md-end flex-wrap">
+                    <p class="card-title">Tickets</p>
+                    <div class="dropdown mb-3 mb-md-0">
+                      <button class="btn btn-sm btn-outline-light dropdown-toggle text-dark" type="button" id="dropdownMenuDate1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        2018
+                      </button>
+                      <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuDate1">
+                        <a class="dropdown-item" href="#">2015</a>
+                        <a class="dropdown-item" href="#">2016</a>
+                        <a class="dropdown-item" href="#">2017</a>
+                        <a class="dropdown-item" href="#">2018</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="table-responsive">
+                    <table class="table tickets-table mb-2">
+                      <thead>
+                        <th class="text-muted pl-0">
+                          Name
+                        </th>
+                        <th></th>
+                        <th class="text-muted">
+                          Date
+                        </th>
+                        <th class="text-muted">
+                          Projects
+                        </th>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="pl-0">
+                            <div class="icon-rounded-primary icon-rounded-md">
+                              <h4 class="font-weight-medium">AL</h4>
+                            </div>
+                          </td>
+                          <td>
+                            <p class="mb-0">Alta Lucas</p>
+                            <p class="text-muted mb-0">Connecticut</p>
+                          </td>
+                          <td>
+                            <p class="mb-0">31 Aug 2018</p>
+                            <p class="text-muted mb-0">9:30 am</p>
+                          </td>
+                          <td>
+                            <p class="mb-0">6770 Verner Burgs</p>
+                            <p class="text-muted mb-0">View on map</p>
+                          </td>
+                          <td class="pr-0">
+                            <i class="mdi mdi-dots-horizontal icon-sm cursor-pointer"></i>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="pl-0">
+                            <div class="icon-rounded-info icon-rounded-md">
+                              <h4 class="font-weight-medium">TS</h4>
+                            </div>
+                          </td>
+                          <td>
+                            <p class="mb-0">Teresa Shaw</p>
+                            <p class="text-muted mb-0">Florida</p>
+                          </td>
+                          <td>
+                            <p class="mb-0">13 May 2018</p>
+                            <p class="text-muted mb-0">10:30 am</p>
+                          </td>
+                          <td>
+                            <p class="mb-0">1300 Gideon Divide Apt. 400</p>
+                            <p class="text-muted mb-0">Start session</p>
+                          </td>
+                          <td class="pr-0">
+                            <i class="mdi mdi-dots-horizontal icon-sm cursor-pointer"></i>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="pl-0">
+                            <div class="icon-rounded-danger icon-rounded-md">
+                              <h4 class="font-weight-medium">RU</h4>
+                            </div>
+                          </td>
+                          <td>
+                              <p class="mb-0">Rosa Underwood</p>
+                              <p class="text-muted mb-0">North Dakota</p>
+                          </td>
+                          <td>
+                            <p class="mb-0">02 Jan 2018</p>
+                            <p class="text-muted mb-0">11:00 am</p>
+                          </td>
+                          <td>
+                            <p class="mb-0">9576 Rempel Extension</p>
+                            <p class="text-muted mb-0">End session</p>
+                          </td>
+                          <td class="pr-0">
+                            <i class="mdi mdi-dots-horizontal icon-sm cursor-pointer"></i>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="pl-0">
+                            <div class="icon-rounded-warning icon-rounded-md">
+                              <h4 class="font-weight-medium">VR</h4>
+                            </div>
+                          </td>
+                          <td>
+                            <p class="mb-0">Vilson Rowa</p>
+                            <p class="text-muted mb-0">Densar</p>
+                          </td>
+                          <td>
+                            <p class="mb-0">05 Nov 2018</p>
+                            <p class="text-muted mb-0">02:30 am</p>
+                          </td>
+                          <td>
+                            <p class="mb-0">1072 Orion Expansion</p>
+                            <p class="text-muted mb-0">On Way</p>
+                          </td>
+                          <td class="pr-0">
+                            <i class="mdi mdi-dots-horizontal icon-sm cursor-pointer"></i>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="pl-0">
+                            <div class="icon-rounded-info icon-rounded-md">
+                              <h4 class="font-weight-medium">TS</h4>
+                            </div>
+                          </td>
+                          <td>
+                            <p class="mb-0">Teresa Shaw</p>
+                            <p class="text-muted mb-0">Florida</p>
+                          </td>
+                          <td>
+                            <p class="mb-0">13 May 2018</p>
+                            <p class="text-muted mb-0">10:30 am</p>
+                          </td>
+                          <td>
+                            <p class="mb-0">1300 Gideon Divide Apt. 400</p>
+                            <p class="text-muted mb-0">Start session</p>
+                          </td>
+                          <td class="pr-0">
+                            <i class="mdi mdi-dots-horizontal icon-sm cursor-pointer"></i>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>  
+              </div>
+            </div>
+            <div class="col-xl-4 grid-margin stretch-card">
+              <div class="card">
+								<div class="card-body">
+									<p class="card-title">Updates</p>
+									<ul class="bullet-line-list mt-4">
+										<li>
+											<h6>User confirmation</h6>
+											<p class="mt-2">Tonight's the night. And it's going to happen again and again. It has to happen. I'm thinking two circus clowns dancing. </p>
+											<p class="text-muted mb-4">
+												<i class="mdi mdi-clock-outline"></i>
+												7 months ago.
+											</p>
+										</li>
+										<li>
+											<h6>Continuous evaluation</h6>
+											<p class="mt-2">And it's going to happen again and again. It has to happen. I'm thinking two circus clowns dancing. Tonight's the night.  </p>
+											<p class="text-muted mb-4">
+												<i class="mdi mdi-clock-outline"></i>
+												7 months ago.
+											</p>
+										</li>
+										<li>
+											<h6>Promotion</h6>
+											<p class="mt-2">It has to happen. I'm thinking two circus clowns dancing. Tonight's the night. </p>
+											<p class="text-muted">
+												<i class="mdi mdi-clock-outline"></i>
+												7 months ago.
+											</p>
+										</li>
+									</ul>
+								</div>
+							</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xl-3 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body pb-0">
+                  <p class="card-title mb-xl-0">Distribution</p>
+                </div>
+                <canvas id="distribution-chart"></canvas>
+                <div class="card-body">
+                  <div id="distribution-legend" class="distribution-chart-legend pt-4 pb-3"></div>
+                  <button class="btn btn-outline-light text-dark d-block mx-auto mt-2">View More</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-9 grid-margin stretch-card">
+              <div class="card">
+                <div class="row">
+                  <div class="col-md-7 col-lg-6 col-xl-7">
+                    <div class="card-body h-100 d-flex flex-column">
+                      <p class="card-title">Sale report</p>
+                      <p class="text-muted mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia id beatae sint dolorum quod ducimus quisquam ut minima atque quaerat.</p>
+                      <canvas id="sale-report-chart"></canvas>
+                    </div>
+                  </div>
+                  <div class="col-md-5 col-lg-6 col-xl-5">
+                    <div class="card-body">
+                      <p class="card-title">Sales report overview</p>
+                      <p class="pb-2 text-muted">Sale information on advertising, exhibitions, market research, online media, customer desires, PR and much more</p>
+                      <div class="d-flex flex-wrap justify-content-start mt-3 mr-4">
+                        <div class="mr-3">
+                          <p class="mb-0">Downloads</p>
+                          <h4>13,956</h4>
+                        </div>
+                        <div class="mr-3">
+                          <p class="mb-0">Purchases</p>
+                          <h4>55,123</h4>
+                        </div>
+                        <div class="mr-3">
+                          <p class="mb-0">Users</p>
+                          <h4>29829</h4>
+                        </div>
+                      </div>
+                      <div class="d-flex mb-3">
+                        <i class="mdi mdi-arrow-expand-up mb-0 text-success mr-2 mt-1"></i>
+                        <p class="mb-0 text-dark">15% more than last week</p>
+                      </div>
+                      <div class="d-flex flex-wrap mb-5">
+                        <button class="btn btn-info mt-3 mr-2">Update</button>
+                        <button class="btn btn-outline-light mt-3 text-dark">More</button>
+                      </div>                  
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <div class="card">
+                <div class="card-body">
+                  <p class="card-title">Open Invoices</p>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <p class="text-muted mb-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, quibusdam eum, totam ut minus dolor eaque alias ratione repellat voluptate, libero beatae nobis facere quod. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque harum maxime quaerat quasi earum totam consectetur eius quisquam deleniti et.</p>
+                    </div>
+                  </div>
+                  <div class="table-responsive">
+                    <table class="table table-striped">
+                      <thead>
+                        <tr class="border-top-0">
+                          <th class="text-muted">Invoice</th>
+                          <th class="text-muted">Customer</th>
+                          <th class="text-muted">Ship</th>
+                          <th class="text-muted">Best Price</th>
+                          <th class="text-muted">Purchsed Price</th>
+                          <th class="text-muted">Status</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>50014</td>
+                          <td>David Grey</td>
+                          <td>Italy</td>
+                          <td class="font-weight-bold">$6300</td>
+                          <td>$2100</td>
+                          <td><div class="badge badge-success badge-fw">Progress</div></td>
+                        </tr>
+                        <tr>
+                          <td>50015</td>
+                          <td>Stella Johnson</td>
+                          <td>Brazil</td>
+                          <td class="font-weight-bold">$4500</td>
+                          <td>$4300</td>
+                          <td><div class="badge badge-warning badge-fw">Open</div></td>
+                        </tr>
+                        <tr>
+                          <td>50016</td>
+                          <td>Marina Michel</td>
+                          <td>Japan</td>
+                          <td class="font-weight-bold">$4300</td>
+                          <td>$6440</td>
+                          <td><div class="badge badge-danger badge-fw">On hold</div></td>
+                        </tr>
+                        <tr>
+                          <td>50017</td>
+                          <td>John Doe</td>
+                          <td>India</td>
+                          <td class="font-weight-bold">$6400</td>
+                          <td>$2200</td>
+                          <td><div class="badge badge-success badge-fw">Progress</div></td>
+                        </tr>
+                        <tr>
+                          <td>50015</td>
+                          <td>Stella Johnson</td>
+                          <td>Brazil</td>
+                          <td class="font-weight-bold">$4500</td>
+                          <td>$4300</td>
+                          <td><div class="badge badge-warning badge-fw">Open</div></td>
+                        </tr>
+                        <tr>
+                          <td>50014</td>
+                          <td>David Grey</td>
+                          <td>Italy</td>
+                          <td class="font-weight-bold">$6300</td>
+                          <td>$2100</td>
+                          <td><div class="badge badge-success badge-fw">Progress</div></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- content-wrapper ends -->
+        <!-- partial:partials/_footer.html -->
+        <footer class="footer">
+          <div class="w-100 clearfix">
+            <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Copyright © 2018 <a href="http://www.urbanui.com/" target="_blank">Urbanui</a>. All rights reserved.</span>
+            <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">Hand-crafted & made with <i class="mdi mdi-heart-outline text-danger"></i></span>
+          </div>
+        </footer>
+        <!-- partial -->
+      </div>
+      <!-- main-panel ends -->
+    </div>
+    <!-- page-body-wrapper ends -->
+  </div>
+  <!-- container-scroller -->
+
+  <!-- plugins:js -->
+  <script src="../../vendors/js/vendor.bundle.base.js"></script>
+  <script src="../../vendors/js/vendor.bundle.addons.js"></script>
+  <!-- endinject -->
+  <!-- Plugin js for this page-->
+  <!-- End plugin js for this page-->
+  <!-- inject:js -->
+  <script src="../../js/off-canvas.js"></script>
+  <script src="../../js/hoverable-collapse.js"></script>
+  <script src="../../js/template.js"></script>
+  <script src="../../js/settings.js"></script>
+  <script src="../../js/todolist.js"></script>
+  <!-- endinject -->
+  <!-- Custom js for this page-->
+  <script src="../../js/dashboard.js"></script>
+  <script src="../../js/todolist.js"></script>
+  <!-- End custom js for this page-->
+</body>
+
+</html>
